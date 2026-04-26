@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yantarne FM</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.css'
+        integrity='sha512-NhLySQDkiKSKnT+R795uaHWRQ7D3VuIvgeOLCK8cWq4w5fq4sWF90gj8eURpTqn/f1mFzqClpOz8JPlgVTLfFw=='
+        crossorigin='anonymous' />
+    <link href="https://fonts.googleapis.com/css?family=Comic+Relief:regular,700" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="icon" href="./img/ico.png">
+
+    <link href="https://fonts.googleapis.com/css?family=SN+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <img src="./img/logo 2.png" class="logo" id="logo">
+            
+            <div class="lines_menu" id="lines_menu"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="nav" id="nav">
+                <ul>
+                    <li id="nav_link">Розклад</li>
+                    <li id="nav_link">Хто ми</li>
+                    <li id="nav_link">Партнери</li>
+                    <li id="nav_link">Контакти</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="radioFrame">
+                <div class="radioBox">
+                    <div class="playBtn" id="playBtn"><i class="fa-solid fa-play"></i></div>
+
+                    <h2 id="trackName" class="trackName">Track - Author</h2>
+                    <h2 id="listeners" class="listeners"><i class="fa-solid fa-headphones"></i>000</h2>
+
+                    <input type="range" id="volumeInp" min="0" max="1" step="0.001">
+                </div>
+            </div>
+        </div>
+
+        <div class="timetable">
+            <h2 class="rozklad-label"><i class="fa-solid fa-radio"></i>Розклад</h2>
+
+            <div class="rozklad">
+                <div class="card first"></div>
+                <div class="card second"></div>
+                <div class="card third"></div>
+                <div class="card four"></div>
+            </div>
+
+            <div class="news" id="news_frame">
+                <div class="card" id="news_template">
+                    <div class="top">
+                        <h2 class="title-text">Title text</h2>
+                    </div>
+
+                    <h3 class="desciipt" id="desciipt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, at.</h3>
+
+                    <h3 class="date" id="date">Date</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="partners">
+            <h2 class="partnert-title"><i class="fa-solid fa-handshake"></i>Партнери</h2>
+
+            <div class="partners-box">
+                <img src="./img/catfm.jpg" class="partner" style="--r:15;">
+                <img src="./img/cia.png" class="partner" style="--r:10;">
+    
+            </div>
+        </div>
+
+        <div class="team">
+            <h2 class="team-title"><i class="fa-solid fa-people-group"></i>Команда [full]</h2>
+            
+            <div class="team-box">
+                <div class="teamate" data-text="Elon Musk">
+                    <img src="./img/team/ElonMusk.jpg">
+                </div>
+
+                <div class="teamate" data-text="Bodya Lisiy">
+                    <img src="./img/team/rozrab2.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="upper-footer">
+                <div class="logo-part footer-section">
+                    <img src="./img/logo 2.png" alt="logo">
+                </div>
+
+                <div class="navs-part footer-section">
+                    <div class="title-wrapper">
+                        <i class="fa-solid fa-street-view"></i><h2 class="nav-title">Навігація</h2>
+                    </div>
+
+                    <ul>
+                        <li>Розклад</li>
+                        <li>Хто ми</li>
+                        <li>Команда</li>
+                        <li>Партнери</li>
+                    </ul>
+                </div>
+
+                <div class="contacts-part footer-section">
+                    <div class="contacts-wrapper">
+                        <i class="fa-solid fa-phone-volume"></i><h2 class="nav-title">Контакти</h2>
+                    </div>
+
+                    <ul>
+                        <div class="wrapper">
+                            <i class="fa-solid fa-envelope"></i><li>example.gmail.com</li>
+                        </div>
+                        
+                        <div class="wrapper">
+                            <i class="fa-solid fa-phone-volume"></i><li>+3800000000</li>
+                        </div>
+                        <div class="wrapper">
+                            <i class="fa-solid fa-phone-volume"></i><li>+3800000000</li>
+                        </div>
+                    </ul>
+
+                    <div class="socials-wrapper">
+
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="lower-footer">
+                <h3 id="contribution-tratemark-text">©2026 Усі права захищені</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
